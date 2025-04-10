@@ -1,0 +1,15 @@
+.App {
+  background-color: var(--COLOR-GRAY);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 5px 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+body {
+  margin: 0;
+}

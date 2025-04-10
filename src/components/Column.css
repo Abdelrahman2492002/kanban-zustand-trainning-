@@ -1,0 +1,71 @@
+.column {
+  background-color: var(--COLOR-GRAY-DARK);
+  min-height: 20rem;
+  color: #fff;
+  min-width: 300px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleWrapper button {
+  all: unset;
+  color: black;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.titleWrapper button:hover {
+  background-color: var(--COLOR-GRAY-LIGHT);
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+.modalContent {
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 5px;
+  min-width: 300px;
+  border-radius: 4px;
+}
+
+.modalContent input,
+.modalContent button {
+  padding: 10px 5px;
+  outline: 0;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 4px;
+}
+.modalContent input {
+  flex: 1;
+}
+.modalContent button {
+  cursor: pointer;
+}
